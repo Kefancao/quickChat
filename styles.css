@@ -19,4 +19,18 @@
 	margin: 5px;
 }
 
+.createButton a:hover{
+	animation: float 0.6s ease-in-out forwards;
+}
+
+@keyframes float {
+	from {
+		transform: scale(1); 
+		border: 1px solid black; 
+	}
+	to {
+		transform: scale(0.9);
+		border: 2px solid black; 
+	}
+}
 
