@@ -1,0 +1,22 @@
+.title{
+	position: absolute;
+	left: 50%; 
+	top: 20%; 
+	transform: translateX(-50%); 
+}
+
+.createButton{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.createButton a{
+	border: 1px solid black;
+	border-radius: 30px;
+	margin: 5px;
+}
+
+
