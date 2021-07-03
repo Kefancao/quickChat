@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 *{
 	font-family: sniglet;
+
+}
+
+
+.welcome{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: none;
 }
 
 .title{
-	position: absolute;
-	left: 50%; 
-	top: 20%; 
-	transform: translateX(-50%); 
+	margin: 50px;
+	font-size: 6em;
 }
 
 .createButton{
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -19,23 +27,31 @@
 }
 
 .createButton a{
-	border: 1px solid black;
+	width: 314px;
+	height: 90px;
+	border: 2px solid black;
+	font-family: signika;
 	border-radius: 30px;
 	margin: 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 90px;
 }
 
 .createButton a:hover{
-	animation: float 0.6s ease-in-out forwards;
+	animation: float 0.3s ease-in-out forwards;
 }
 
 @keyframes float {
 	from {
 		transform: scale(1); 
-		border: 1px solid black; 
+		border: 2px solid black; 
 	}
 	to {
 		transform: scale(0.9);
-		border: 2px solid black; 
+		border: 5px solid black; 
 	}
 }
 
@@ -44,12 +60,16 @@
 
 .box{
 	border: 3px solid black;
+	border-radius: 33px;
 	position: absolute;
 	width: 70%;
 	height: 70%;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	padding-left: 2em;
+	padding-top: 20px;
+	font-size: 2em;
 }
 
 #typeBox{
@@ -62,6 +82,8 @@
 	width: 80%;
 	margin-bottom: 2%;
 	height: 5%;
+	border-radius: 30px;
+	padding-left: 0.5cm ;
 }
 
 #submitButton{
@@ -72,8 +94,12 @@
 	margin-bottom: 2%;
 	width: 10%;
 	right: 2.1%; 
+	border-radius: 30px;
 }
-
+#submitButton:hover{
+	animation: float 0.3s ease-in-out forwards;
+	cursor: pointer;
+}
 
 .container{
 	display: flex ;
@@ -83,4 +109,14 @@
 	justify-content: center;
 	height: 100vh;
 	font-size: 40px;
+}
+
+/* Temporary placeholder for time of text message */
+#time{
+	font-size: 0.6em;	
+
+}
+
+.box p{
+	margin: 0.4cm;
 }

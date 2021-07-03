@@ -11,10 +11,18 @@
 
 	<div class="box">
 		<form action="">
-			<input  id="typeBox" type="text" >
+			<input  id="typeBox" type="text" placeholder="Type here...">
 			<input  id="submitButton" type="submit" style="height: 6%;" value="Send">
+			<p id="time"></p>
 			<p>hi</p>
 		</form>
 	</div>
+	<script>
+		var today = new Date();
+		var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var dateTime = date+' '+time; 
+		document.getElementById("time").innerHTML = dateTime; 
+	</script>
 </body>
 </html>
