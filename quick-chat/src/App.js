@@ -21,16 +21,7 @@ import './styles.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div class="welcome"> 
-          <div class = "title">
-            quickChat
-          </div>
-          <div class="createButton">
-            <a>Join Chat</a>
-            <a>Create Chat</a>
-          </div>
-        </div>
+      <header className="App-header"> 
       </header>
     </div>
   );
